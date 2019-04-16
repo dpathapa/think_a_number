@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name= "viewport" content="width=device-width, initial-scale=1">
+       <title> My Portfolio Site </title>
+       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+       <link rel="stylesheet" href="guessAnumber.css">
+       
+    </head>
+    <body>
+    <!-- wrapper starts here -->
+        <div class="wrapper">
+       <section>
+            <div class="task-1">
+                <div class="game">
+                <h1> Think a Number</h1>
+                <hr>
+                <p class="inst">Hint: </p>
+                <p> Lightblue : if your guess is within 30 of right number.</p>
+                <p> Orange - if you guess is within 10 of right number.</p>
+                        <!-- <div class="gamebox1"> -->
+                <fieldset>
+                    <legend>Enter a number between 1 and 100:</legend>
+                    <label for ="guess-field">Number: </label>
+                    <input type="text" id="guess-field" class="guess-field"><br><br>
+                    <button type="submit" id="submit-guess" class="submit-guess">Enter</button>
+                    <button type="reset" class="reset">New Game</button> 
+                </fieldset>
+               </div><br>
+               <div class ="resultParas">
+                <p class="lowOrHigh"></p>
+                <p class="guesses"></p>                         
+               </div>
+            </div>
+     </section>
+           
+    <!-- footer -->
+            <footer class="main-footer">
+                <p>copyright &copy; | Deepa Bhujel Thapa</p>
+            </footer>
+       
+         </div>   
+         <!-- wrapper ends here -->   
+         <script src="guessAnumber.js" ></script>   
+    </body>
+</html>

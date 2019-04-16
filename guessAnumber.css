@@ -1,0 +1,117 @@
+/*core styles*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+:root {
+    --primary: #ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;;
+    color:var(--dark);
+}
+body{
+    background:#ccffcc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding:0.6rem 1.3rem;
+    text-decoration: none;
+    border:0;
+}
+
+.wrapper {
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+/* message-form */
+.task-1 {
+    display: grid;
+    grid-template-areas: 
+    'game'
+    'result';          
+    grid-gap: 20px;
+    background: url("/images/pics.jpg") no-repeat;
+    background-position: center;
+    background-size:cover;
+    border: 1px solid white;
+    box-shadow: var(--shadow);
+    opacity: 0.9;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+   
+}
+.game {
+    grid-area: game;
+    background:black;
+    color: white;
+    border: 1px solid white;
+    margin: 0 auto;
+    padding: 20px;
+
+} 
+.game h1{
+    text-align: center;
+}
+.resultParas {
+    grid-area: result;
+    background: white;
+    border: 1px solid black;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+
+.game  p {
+    color: white;
+   
+        }
+.game img {
+        width: 100px;
+    text-align: center;
+        }
+
+/* footer */
+ .main-footer {
+     display:grid;
+     background-color: black;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     border:1px solid gray;
+     box-shadow:var(--shadow);
+ }
+ .main-footer a{
+     text-align: center;
+     text-decoration: none;
+     color:lightblue;
+     padding:10px;
+ }
+ .main-footer p {
+     color: white;
+ }
+
+ /* media queries */
+ @media(max-width:786px){
+     
+ }
+@media (max-width:480px){
+   
+ .main-header{
+       display: flex;
+       flex-shrink: inherit;
+    }
+   
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+   
+    
+}
